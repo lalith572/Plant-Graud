@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" value="This is plant Disease Detection  project webpage using HTML,CSS and JavaScript."/>
+    <meta name="keywords" value="Disease,Detection,plant Disease,developer,java,full stack developer,webpage,HTML,CSS,JavaScript"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" value="Lalith Kumar A"/>   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>PlantGuard</title>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../static/images/agri2 (1).png" type="image/x-icon">
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <!-- HAEDER START -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav_logo">
+                <i class="ri-leaf-line nav_logo-icon"></i> PlantGuard
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link  active-link">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="predict.html" class="nav_link">Predict</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="https://blynk.cloud/dashboard/97937/global/devices/2146737/organization/97937/devices/685894/dashboard" class="nav_link">Monitor</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+            </div>
+
+            <div class="nav_btns">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1u5pRBd7V-jGKHJF3Pl_iSc-gGq6zr9EY/view?usp=sharing" class="download_btn">
+                <i class="ri-smartphone-line"></i> Download App
+            </a>
+        </nav>
+    </header>
+    <!-- HAEDER END -->
+
+    <!--MAIN START -->
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home_container container ">
+                <h1 class="home_title" style="color: black;">
+                    Plants will make your life better
+                </h1>
+                <p class="home_description" style="color: black;">
+                   Iot Based Smart Irrigation System with <br>
+                   Plant Disease Detection using Machine Learning.
+                </p>
+                <a href="#about" class="button button--flex">
+                    Explore <i class="ri-arrow-right-down-line button_icon"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="about section container" id="about">
+            <div class="about_container ">
+                <div class="about_data">
+                    <h2 class="about_title">
+                        An Integrated System <br> to make Revolution in Agriculture
+                    </h2>
+                    <p class="about_description">
+                        Our system uses IoT technologies to monitor environmental 
+                        conditions and automates irrigation systems based on real-time data
+                        from the sensors. Data are collected and received by NodeMCU which 
+                        can be linked to an interactive app that shows the real-time values 
+                        along with the standard values of different factors required by a crop.
+                        Additionally, a machine learning-based model that helps in classifying
+                        and detecting diseases or infections using a trained model. 
+                        The module leverages machine learning method to recognize various plant diseases,
+                        enabling early intervention and minimizing crop damage, and also provides
+                        preventive measures for the particular disease. 
+                        <strong>The main targets of our system are terrace farming and small-scale farming.</strong>
+                        Integrating both the IoT system and machine learning module will provide
+                        a comprehensive solution for precision agriculture, enhancing crop productivity
+                        while conserving resources. 
+                        Thus, our integrated system will provide the best results in the farming world.
+                    </p>
+                </div> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+      
+            <div class="steps_bg">
+                <h2 class="steps_title section_title-center">
+                    Steps to Guard your <br> plants Health
+                </h2>
+                <div class="steps_container grid">
+                    <div class="steps_card">
+                        <div class="steps_card-number">01</div>
+                        <h3 class="steps_card-title">Integrating Sensors</h3>
+                        <p class="steps_card-description">We have to place all the sensors in the field and make connection with Blynk.</p>
+                    </div>
+
+                    <div class="steps_card">
+                        <div class="steps_card-number">02</div>
+                        <h3 class="steps_card-title">Monitoring the plant</h3>
+                        <p class="steps_card-description">Once sensors are placed and connection is made, we can monitor the moisture
+                            level,surrounding temperature,humidity & any motion detection remotely.</p>
+                    </div>
+
+                    <div class="steps_card">
+                        <div class="steps_card-number">03</div>
+                        <h3 class="steps_card-title">Disease Detection</h3>
+                        <p class="steps_card-description">If any plant leaf is affected with disease we need to predict it type by 
+                            uploading its images and the trained model will predict and gives you solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+
+        <!-- questions -->
+        <section class="questions section" id="faqs">
+            <h2 class="questions_title section_title-center container">
+                Some common questions often asked
+            </h2>
+
+            <div class="questions_container container grid">
+                <div class="questions_group">
+                    <div class="questions_item">
+                        <header class="questions_header">
+                            <i class="ri-add-line questions_icon"></i>
+                            <h3 class="questions_item-title">
+                                For what specific plant does the system provide solution?
+                            </h3>
+                        </header>
+                        <div class="questions_content">
+                            <p class="questions_description">
+                                Our System currently detect diseases and provides solutions for Tomato plant
+                                and in future we will provide for more plants<strong>So Stay Connected</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions_item">
+                        <header class="questions_header">
+                            <i class="ri-add-line questions_icon"></i>
+                            <h3 class="questions_item-title">
+                                What are the Sensors used in this project?
+                            </h3>
+                        </header>
+                        <div class="questions_content">
+                            <p class="questions_description">
+                                Our system has a Soil Mositure sensor,DHT11 Sensor,PIR Motion Sensor,Water Flow Sensor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions_item">
+                        <header class="questions_header">
+                            <i class="ri-add-line questions_icon"></i>
+                            <h3 class="questions_item-title">
+                                Which MicroController is used in this Project?
+                            </h3>
+                        </header>
+                        <div class="questions_content">
+                            <p class="questions_description">
+                                In this project,we have used NodeMCU ESP8266 instead of Arduino or Raspberry PI
+                                since it is cost effective and has in-built Wi-Fi module.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions_group">
+                    <div class="questions_item">
+                        <header class="questions_header">
+                            <i class="ri-add-line questions_icon"></i>
+                            <h3 class="questions_item-title">
+                               What are the Algorithms used for training the model?
+                            </h3>
+                        </header>
+                        <div class="questions_content">
+                            <p class="questions_description">
+                                We have try different Algorithms like Transfer Learning,VGG16,Inception V3,CNN,Mobile Net V2
+                                and in these algorithms CNN provides best acccuracy compared to others so it is used for disease detection  .
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions_item">
+                        <header class="questions_header">
+                            <i class="ri-add-line questions_icon"></i>
+                            <h3 class="questions_item-title">
+                                Will the system provides cure or Preventive measures?
+                            </h3>
+                        </header>
+                        <div class="questions_content">
+                            <p class="questions_description">
+                                Yes,Our System will provide the preventive measures for the each particular diseases.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions_item">
+                        <header class="questions_header">
+                            <i class="ri-add-line questions_icon"></i>
+                            <h3 class="questions_item-title">
+                                How much does the System Hardware Costs?
+                            </h3>
+                        </header>
+                        <div class="questions_content">
+                            <p class="questions_description">
+                               Our System Hardware costs around Rs: 1500 which depends on sensors cost at the time of purchase.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="section container contact" id="contact">
+            <div class="contact_container grid">
+                <div class="contact_box">
+                    <h2 class="section_title">
+                        Reach out to us today <br> via any of the given <br> information
+                    </h2>
+                    <div class="contact_data">
+                        <div class="contact_information">
+                            <h3 class="contact_subtitle">Write us by mail</h3>
+                            <span class="contact_description">
+                                <i class="ri-phone-line contact_icon"></i>
+                                +999 888 777
+                            </span>
+                        </div>
+
+                        <div class="contact_information">
+                            <h3 class="contact_subtitle">Write us by mail</h3>
+                            <span class="contact_description">
+                                <i class="ri-mail-line contact_icon"></i>
+                                user@email.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form">
+                    <div class="contact_inputs">
+                        <div class="contact_content">
+                            <input type="text" placeholder=" " class="contact_input">
+                            <label class="contact_label" for="">Email</label>
+                        </div>
+                        <div class="contact_content">
+                            <input type="text" placeholder=" " class="contact_input">
+                            <label class="contact_label" for="">Subject</label>
+                        </div>
+                        <div class="contact_content contact_area">
+                            <textarea type="text" placeholder=" " class="contact_input"></textarea>
+                            <label class="contact_label" for="">Message</label>
+                        </div>
+                    </div>
+                    <div class="button button--flex">
+                        Send Message
+                        <i class="ri-arrow-right-up-line button_icon"></i>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--MAIN END -->
+
+
+    <!--FOOTER START -->
+    <footer class="footer ">
+        <div class="footer_container">
+            <div class="footer_content">
+                <a href="#" class="footer_logo">
+                    <i class="ri-leaf-line footer_logo-icon"></i> PlantGuard
+                </a>
+                <p>All Rights Reserved @ 2024</p>
+                <p>Designed by Lalith</p>
+            </div>
+        </div> 
+    </footer>
+    <!--FOOTER END -->
+    <!--=============== SCROLL UP ===============-->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup_icon"></i>
+    </a>
+
+    <!-- js -->
+    <script src="../static/main2.js"></script>
+</body>
+
+</html>

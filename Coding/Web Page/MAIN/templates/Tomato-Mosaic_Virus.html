@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" value="This is plant Disease Detection  project webpage using HTML,CSS and JavaScript."/>
+    <meta name="keywords" value="Disease,Detection,plant Disease,developer,java,full stack developer,webpage,HTML,CSS,JavaScript"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" value="Lalith Kumar A"/>   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Tomato Mosaic Virus</title>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../static/images/agri2 (1).png" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../static/style.css">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/bgleaf.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h1{
+            text-align:center;
+            font-size:4rem
+        }
+        h4,h6{
+            color: white;
+            text-align: justify;
+        }
+        img{
+            width:500px;
+            height:500px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            body{
+                background-repeat:repeat-y;
+                align-content: center;
+                justify-content: center;
+                
+            }
+           img{
+            height: 300px;
+            width: 300px;
+           }
+           h1,h4{
+            font-size: 1.5rem;
+           } 
+           h6{
+            font-size: 1rem;
+            text-align: justify;
+           }
+           .details{
+            padding-right :50px;
+           }
+           .disName{
+            padding-right: 50px;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HAEDER START -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav_logo">
+                <i class="ri-leaf-line nav_logo-icon"></i> PlantGuard
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link ">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="index.html#about" class="nav_link">About</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="predict.html" class="nav_link  active-link">Predict</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="https://blynk.cloud/dashboard/97937/global/devices/2146737/organization/97937/devices/685894/dashboard" class="nav_link">Monitor</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="index.html#contact" class="nav_link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+            </div>
+
+            <div class="nav_btns">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1u5pRBd7V-jGKHJF3Pl_iSc-gGq6zr9EY/view?usp=sharing" class="download_btn">
+                <i class="ri-smartphone-line"></i> Download App
+            </a>
+        </nav>
+    </header>
+    <!-- HAEDER END -->
+    <section>
+        <div>
+            <h1>Predict Tomato Leaf Disease & Get Cure</h1>
+        </div>
+
+        <br><br>
+
+        <div class="container my-2">
+            <div class="row mb-5">
+                <div class="col-sm" style="margin-bottom: 23px;">
+                    <span class="border border-primary">
+                        <img src="{{url_for('static',filename = 'images/Tomato___Tomato_mosaic_virus.JPG' )}}" alt="User Image">
+                    </span>
+                </div>
+                <div class="col-sm">
+                    <div class="disName">
+                        <h1 style="font-size: 2rem; padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                            class="text-center mb-5 content-h1 rounded">
+                            {{pred_output}} </h1>
+                    </div>
+                    <div class="details">
+                        <h4><b> Treatment : </b> </h4>
+                        <h6>
+                            There are no cures for viral diseases such as mosaic once a plant is infected. As a result, every effort should be made to prevent the disease from entering your garden.
+                            <br>
+                            1.Fungicides will NOT treat this viral disease.
+                            <br>
+                            2.Plant resistant varieties when available or purchase transplants from a reputable source.
+                            <br>
+                            3.Do NOT save seed from infected crops.
+                            <br>
+                            4.Spot treat with least-toxic, natural pest control products, such as Safer Soap, Bon-Neem and diatomaceous earth, to reduce the number of disease carrying insects.
+                            <br>
+                            5.Harvest-Guard® row cover will help keep insect pests off vulnerable crops/ transplants and should be installed until bloom.
+                            <br>
+                            6.Remove all perennial weeds, using least-toxic herbicides, within 100 yards of your garden plot.
+                            <br>
+                            7.The virus can be spread through human activity, tools and equipment. Frequently wash your hands and disinfect garden tools, stakes, ties, pots, greenhouse benches, etc. (one part bleach to 4 parts water) to reduce the risk of contamination.
+                            <br>
+                            8.Avoid working in the garden during damp conditions (viruses are easily spread when plants are wet).
+                            <br>
+                            9.Avoid using tobacco around susceptible plants. Cigarettes and other tobacco products may be infected and can spread the virus.
+                            <br>
+                            10.Remove and destroy all infected plants (see Fall Garden Cleanup). Do NOT compost.
+                            <br>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--FOOTER START -->
+     <footer class="footer ">
+        <div class="footer_container">
+            <div class="footer_content">
+                <a href="#" class="footer_logo">
+                    <i class="ri-leaf-line footer_logo-icon"></i> PlantGuard
+                </a>
+                <p>All Rights Reserved @ 2024</p>
+                <p>Designed by Lalith</p>
+            </div>
+        </div> 
+    </footer>
+    <!--FOOTER END -->
+    
+    <!-- js -->
+    <script src="../static/main2.js"></script>
+</body>
+
+</html>
